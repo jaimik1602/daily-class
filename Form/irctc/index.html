@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your account</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+        }
+
+        a:hover {
+            border: 2px solid black;
+        }
+        input,select,option{
+            padding: 7px;
+            width: 50%;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create Your account</h1>
+    <table>
+        <tr>
+            <th><a href="index.html">Basic Details</a></th>
+            <th><a href="details.html">Personal Details</a></th>
+            <th><a href="address.html">Address</a></th>
+        </tr>
+    </table>
+    <hr><br>
+    <p><strong>GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIVATION</strong><br>
+        Please use a valid E-Mail ID and mobile number in registration.</p><br>
+    <form action="details.html">
+        <input type="text" id="username" name="username" placeholder="username" required><br>
+        <input type="password" id="pass" name="pass" placeholder="Password" required><br>
+        <input type="password" id="confirmpass" name="confirmpass" placeholder="Confirm Password" required><br>
+        <select name="lang" id="lang" required>
+            <option value="">Preferred Language</option>
+            <option value="hindi">हिंदी</option>
+            <option value="eng">English</option>
+        </select><br>
+        <select name="securityq" id="securityq" required>
+            <option value="">Security Question</option>
+            <option value="petname">What is your pet name?</option>
+            <option value="firstschool">What was the name of your first school?</option>
+            <option value="childhoodhero">Who is your Childhood hero?</option>
+            <option value="fav-past-time">What is your favorite past-time?</option>
+            <option value="fav-sports-team">What is your all time favorite sports team?</option>
+            <option value="fathermidname">What is your fathers middle name?</option>
+            <option value="carorbike">What make was your first car or bike?</option>
+            <option value="spouse">Where did you first meet your spouse?</option>
+        </select><br>
+        <input type="text" id="securityanswer" name="securityanswer" placeholder="Security Answer" required><br>
+        <input type="submit" style="float: right; width: 100px;">
+        <input type="reset" style="float: left; width: 100px;">
+    </form>
+</body>
+
+</html>

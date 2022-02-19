@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Page</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+
+        label,
+        input {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-left: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fill Your Details</h1><br>
+    <h2>Employee Personal Information:-</h2>
+    <form action="index.html" method="post">
+        <input type="hidden" name="formnumber" id="formnumber" value="1">
+        <!-- <input style="float: right;" type="image"  alt="logo" width="50" height="50"> -->
+        <label for="fname">First Name:-</label>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="mname">Middle Name:-</label>
+        <input type="text" id="mname" name="mname" required><br>
+        <label for="lname">Last Name:-</label>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="gender"><b>Gender:-</b></label>
+        <input type="radio" id="gender" name="gender" required>
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" required>
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="gender" required>
+        <label for="gender">Transgender</label><br>
+        <label for="number">Mobile Number</label>
+        <input type="number" id="number" name="number" required><br>
+        <label for="tel">Telephone number:-</label>
+        <input type="tel" name="tel" id="tel" placeholder="1234-567-8901" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br>
+        Select Your Hobby:-
+        <input type="checkbox" name="hobby1" id="hobby1" value="Collection">
+        <label for="hobby1">Collection</label>
+        <input type="checkbox" name="hobby2" id="hobby2" value="Sports">
+        <label for="hobby2">Sports</label>
+        <input type="checkbox" name="hobby3" id="hobby3" value="Reading">
+        <label for="hobby3">Reading</label>
+        <input type="checkbox" name="hobby4" id="hobby4" value="singing">
+        <label for="hobby4">Singing</label><br>
+        <label for="color">Select yout Favorite :- </label>
+        <input type="color" name="color" id="color"><br>
+        <label for="meetingtime">Select your meeting time:-</label>
+        <input type="datetime-local" name="meetingtime" id="meetingtime" required><br>
+        <label for="result">Upload your Marksheet :-</label>
+        <input type="file" name="result" id="result" required>
+        <input type="button" onclick="alert('Upload Successfully')" value="Upload"><br>
+        <label for="exp">Enter your Experience (between 0 and 15):-</label>
+        <input type="range" name="exp" id="exp" min="0" max="15"><br>
+        <label for="linkedin">Linkedin Profile:-</label>
+        <input type="url" name="linkedin" id="linkedin" required><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
+
+

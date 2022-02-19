@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+        }
+
+        a:hover {
+            border: 2px solid black;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create Your account</h1>
+    <table>
+        <tr>
+            <th><a href="index.html">Basic Details</a></th>
+            <th><a href="details.html">Personal Details</a></th>
+            <th><a href="address.html">Address</a></th>
+        </tr>
+    </table>
+    <hr><br>
+    <form action="index.html" style="width: 100%;">
+        <input style="width: 40%;" type="text" id="no" name="no" placeholder="Flat/Door/Block No." required>
+        <input style="width: 40%;float: right;" type="text" id="lane" name="lane"
+            placeholder="Street/Lane (Optional)"><br>
+        <input style="float: left;width: 40%;" type="text" name="area" id="area" placeholder="Area/Locality (Optional)">
+        <input style="float: right;width: 40%;" type="number" name="pin" id="pin" placeholder="Pin Code" required><br>
+        <input style="float: left;width: 40%;" type="text" name="state" id="state" placeholder="State" required>
+        <select name="city" id="cite" style="width: 40%; padding: 11px; margin: 10px; float: right;" required>
+            <option value="">Select City</option>
+            <option value="surat">Surat</option>
+            <option value="ahemdabad">Ahemdabad</option>
+        </select><br>
+        <select name="post" id="post" style="width: 40%; padding: 11px; margin: 10px; float: left;" required>
+            <option value="">Select a Post Office</option>
+            <option value="godadara">Godadara B.O</option>
+            <option value="parvat">Parvat B.O</option>
+        </select>
+        <input style="width: 40%;  float: right;" type="number" name="number" id="number" placeholder="Phone"
+            required><br>
+        <p style="clear: right;">Copy Residence to office Address
+            <input type="radio" name="yes" id="yes" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="yes" id="yes" value="no">
+            <label for="no">No</label>
+        </p>
+        <input type="checkbox" name="check" id="check">
+        <label for="check"> Please inform me about IRCTC Co-branded credit card through Phone/Email/SMS (Optional) <br>
+            Book free Railway tickets using Reward Points and Enjoy Zero payment gateway charge with IRCTC SBI
+            Card</label><br><br>
+        <input type="checkbox" name="agree" id="agree" required>
+        <label for="agree">I have read and agree with the Terms and Conditions. and also agree to receive promotional
+            emails/SMS/offers/announcements from IRCTC & associated partners</label><br>
+
+        <input class="radio" type="button" value="Back" onclick="history.back()" style="float: left;">
+        <input class="radio" type="submit" style="float: right;"><br>
+    </form>
+</body>
+
+</html>

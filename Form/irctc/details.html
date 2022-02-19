@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+        }
+
+        a:hover {
+            border: 2px solid black;
+        }
+        input,select,option{
+            padding: 7px;
+            width: 25%;
+            margin: 15px;
+        }
+        .radio{
+            padding: 5px;
+            margin: 5px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Your account</h1>
+    <table>
+        <tr>
+            <th><a href="index.html">Basic Details</a></th>
+            <th><a href="details.html">Personal Details</a></th>
+            <th><a href="address.html">Address</a></th>
+        </tr>
+    </table>
+    <hr><br>
+    <form action="address.html" style="width: 100%;" align="center">
+        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+        <input type="text" id="mname" name="mname" placeholder="Middle Name [Optional]">
+        <input type="text" id="lname" name="lname" placeholder="Last Name [Optional]"><br>
+        <p><b>Info!Please provide your exact name as per Aadhaar to avail Aadhaar based benefits on IRCTC eTicketing website.</b></p>
+        <select name="occupation" id="occupation" style="width: 40%;" required>
+            <option value="">Select occupation</option>
+            <option value="gov">GOVERNMENT</option>
+            <option value="pub">PUBLIC</option>
+            <option value="private">PRIVATE</option>
+            <option value="professonal">PROFESSIONAL</option>
+            <option value="selfemployed">SELF EMPLOYED</option>
+            <option value="student">STUDENT</option>
+            <option value="other">OTHER</option>
+        </select>
+        <input type="date" id="dob" name="dob" placeholder="Date Of Birth" min="1-1-2004" style="width: 40%;" required><br>
+        <input class="radio" type="radio" id="reletion" name="reletion" value="Married" required>
+        <label class="radio" for="reletion">Married</label>
+        <input class="radio" type="radio" id="reletion" name="reletion" value="Unmarried" required>
+        <label class="radio" for="reletion">Unmarried</label>
+        <select name="cou" id="cou" style="width: 15%;" required>
+            <option value="">Select a Country</option>
+            <option value="ind">India</option>
+            <option value="us">US</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select><br>
+        <input class="radio" type="radio" id="gender" name="gender" value="male" required>
+        <label class="radio" for="gender">Male</label>
+        <input class="radio" type="radio" id="gender" name="gender" value="female" required>
+        <label class="radio" for="gender">Female</label>
+        <input class="radio" type="radio" id="gender" name="gender" value="transgender" required>
+        <label class="radio" for="gender">Transgender</label><br>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="number" id="countrycode" name="countrycode" value="91" readonly><br>
+        <input type="number" id="mobile" name="mobile" placeholder="Mobile" required>
+        <select name="nat" id="nat" style="width: 15%;" required>
+            <option value="">Select a Nationality</option>
+            <option value="ind">India</option>
+            <option value="us">US</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select><br>
+        <input class="radio" type="button" value="Back" onclick="history.back()" style="float: left;">
+        <input class="radio" type="submit" style="float: right;"><br>
+    </form>
+</body>
+</html>
